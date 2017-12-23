@@ -22,3 +22,10 @@ pipeline:
     commands:
       - echo "sleep 15"
       - sleep 15
+      
+  backend-3:
+    image: golang
+    group: test
+    commands:
+      - echo "sleep 15"
+      - sleep 15
