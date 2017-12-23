@@ -9,8 +9,16 @@
 #     tags: true
 
 pipeline:
-  backend:
+  backend-1:
     image: golang
+    group: build
     commands:
-      - make fmt-check
-      - make test
+      - echo "sleep 10"
+      - sleep 10
+
+  backend-2:
+    image: golang
+    group: build
+    commands:
+      - echo "sleep 15"
+      - sleep 15
